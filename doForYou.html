@@ -1,43 +1,98 @@
 <html>
 <head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--[if lt IE 9]>
 		    <script
 		    src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
 		    </script>
 		    <![endif]-->
-		<link rel="stylesheet" type="text/css" href="style/style.css"  media="all and (max-width: 2000px)"/>
-		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
-		<title>Code Consulting</title>
+	<title>Code Consulting</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	
+	<!-- Our Styles -->
+	<link rel="stylesheet" type="text/css" href="style/style.css"  media="all and (max-width: 2000px)"/>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+		
 </head>
 <body>
-	<header>
-		<a href="index.html"><img src="images/logo.png" alt="logo"></a>
-		<div>
-			<ul>
-				<li><a href="whoWeAre.html">Who We Are<img onmouseleave="changeImgOnMouseOut(this.id)" onclick="changeImgOnMouseIn(this.id)" id="bar" class="gbar" src="images/gbar.png" alt="gray bar"></a></li>
-				<li><a href="whatWeDo.html">What We Do<img class="gbar" src="images/gbar.png" alt="gray bar"></a></li>
-				<li><a href="whatWeHaveDone.html">What We've Done<img class="gbar" src="images/gbar.png" alt="gray bar"></a></li>
-				<li><a href="doForYou.html">What We'll do for You<img class="gbar" src="images/gbar.png" alt="gray bar"></a></li>
+<nav class = "navbar navbar-default navbar-static-top">
+	<div class = "container">
+		<div class="navbar-header">
+      		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        		<span class="sr-only">Toggle navigation</span>
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+      		</button>
+      		<a class="navbar-brand" href="index.html"><img src="images/logo.png" id = "logo" alt="logo"></a>
+    	</div>
+			
+		<div id="navbar" class="navbar-collapse collapse">				
+			<ul class = "nav navbar-nav navbar-right">
+				<li><a href="doForYou.html">What We Offer</a></li>
+					<li><a href="whatWeHaveDone.html">What We've Done</a></li>
+				<li><a href="whatWeDo.html">What We Do</a></li>
+				
+				<li><a href="whoWeAre.html">Who We Are</a></li>
+				
+				
+				
 			</ul>
 		</div>
-	</header>
-<body>
-	<section class="nrow">
-		<div class="half">
-			<p id="motto">Get in contact with us and tell us what you need. Expect a quick and friendly response!</p>
+	</div>
+</nav>
+	
+	<div class = "container">
+	
+		<div class="col-md-6">
+		
+			<p id="motto">Get in contact with us and tell us what you need!</p>
+		
 		</div>
-		<div class="half">
-			<div id="chat">
+		<div class = "col-md-6">
+			
+			<form class="contact" action="#" method="get">
 				<h1>How Can We Help?</h1>
-				<form class="contact" action="#" method="get">
-					Name:<input type="text" name="name"><br>
-					Email:<input type="text" name="email"><br>
-					Phone:<input type="text" name="phone"><br>
-					Company:<input type="text" name="company"><br>
-					Comments<br><textarea rows="4" cols="50" name="comments">Comments</textarea><br>
-					<input type="submit" value="submit"><br>
-				</form>
+			<div class = "form-group">
+			<input type="text" name="name" placeholder="Name" class="form-control">
 			</div>
+			<div class = "form-group">
+			<input type="text" name="email" placeholder="Email" class="form-control">
+			</div>
+			<div class = "form-group">
+			<input type="text" name="Phone" placeholder="Phone Number" class="form-control">
+			</div>
+			<div class = "form-group">
+			<input type="text" name="company" placeholder="Company" class="form-control">
+			</div>
+			<div class = "form-group">
+			<textarea class= "form-control" rows="5" placeholder="Comments"></textarea>
+			</div>
+				<center>
+			<button type="submit" class="btn btn-default">Submit</button>
+				</center>
+				</form>
+			
 		</div>
-	</section>
+	
+		</div>
+
+	<div class="navbar navbar-default navbar-bottom">
+	<div class="container">
+	<left>
+	<p>CopyRight 2016, BabsonCode</p>	
+	</center>	
+	</left>
+	</div>
+	</div>
 </body>
+</html>
