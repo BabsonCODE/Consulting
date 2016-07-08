@@ -1,0 +1,41 @@
+<div class="col-md-6">
+
+    <p id="motto"></p>
+
+</div>
+<div class = "col-md-6">
+
+    <form class="contact" action="#" method="get">
+        <h1>Let's Chat...</h1>
+        <div class = "form-group">
+            <input type="text" name="name" placeholder="Name" class="form-control">
+        </div>
+        <div class = "form-group">
+            <input type="text" name="email" placeholder="Email" class="form-control">
+        </div>
+        <div class = "form-group">
+            <input type="text" name="Phone" placeholder="Phone Number" class="form-control">
+        </div>
+        <div class = "form-group">
+            <input type="text" name="company" placeholder="Company" class="form-control">
+        </div>
+        <div class = "form-group">
+            <textarea class= "form-control" rows="5" placeholder="Comments"></textarea>
+        </div>
+        <center>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </center>
+    </form>
+
+</div>
+
+<!-- Typing animation script -->
+<script src="js/typeit.js"></script>
+<script>
+$('#motto').typeIt({
+ strings: ['Helping Babson Entrepreneurs achieve the technical solutions that reflect their business needs.'],
+ speed: 100 ,
+    breakLines: false ,
+ autoStart: false
+});
+</script>
