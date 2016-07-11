@@ -1,0 +1,32 @@
+<div class="col-md-6">
+
+		<p id="motto">Get in contact with us and tell us what you need!</p>
+
+</div>
+
+<div class = "col-md-6">
+
+    <form class="contact" action="emailer.php" method="post">
+        <h4 ng-if="success" class="success">&#10004 Your email has been sent successfully</h4>
+        <h1>How can we help?</h1>
+        <div class = "form-group">
+            <input type="text" name="name" ng-model="name" placeholder="Name" class="form-control">
+        </div>
+        <div class = "form-group">
+            <input type="text" name="email" ng-model="email" placeholder="Email" class="form-control">
+        </div>
+        <div class = "form-group">
+            <input type="text" name="phone" ng-model="phone" placeholder="Phone Number" class="form-control">
+        </div>
+        <div class = "form-group">
+            <input type="text" name="company" ng-model="company" placeholder="Company" class="form-control">
+        </div>
+        <div class = "form-group">
+            <textarea class= "form-control" name="comment" ng-model="comment" rows="5" placeholder="Comments"></textarea>
+        </div>
+        <center>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </center>
+    </form>
+
+</div>
