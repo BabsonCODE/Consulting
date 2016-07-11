@@ -35,6 +35,6 @@ $message = Swift_Message::newInstance('Babson Code Consulting')
 
 $result = $mailer->send($message);
 
-header('Location: http://localhost/Codeplex%20Consulting/#/?email=success');
+header('Location: http://codeconsulting.herokuapp.com?email=success');
 ob_end_flush();
 ?>
