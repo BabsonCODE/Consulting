@@ -8,14 +8,14 @@
 
 
 .navbar-nav li:hover{
-	border-bottom-color:#960400; 
+	border-bottom-color:#960400;
 	}
 .navbar {
 	background: none;
 	height: 15%;
 	border: none;
 }
-#logo{ 
+#logo{
 	width: 90%;
 }
 
@@ -60,7 +60,7 @@ footer p{
 li a {
 	text-decoration:none;
 	color:#d8d8d8;
-	
+
 }
 #motto{
 	font-size:3.5rem;
@@ -95,7 +95,7 @@ input{
 }
 
 .faceimg{
-	
+
 	margin-top:10px;
 	float: left;
 	margin-right: 0.6vw;;
@@ -108,7 +108,7 @@ input{
 	font-weight: 600;
 }
 .box{
-	
+
 	margin-top:10px;
 	text-align:left;
 	padding-bottom: 1vh;
@@ -178,7 +178,7 @@ input{
 
 #ls{
 	width:80%;
-	
+
 }
 
 #rr{
@@ -198,16 +198,28 @@ input{
 
 /*end section*/
 
-form{
+form {
 	background: rgba(255,255,255,.5);
 	padding: 1.4em;
 	border-radius: 10px;
 	margin-top: 2vh;
 	box-shadow: 5px 5px 4px #303030;
 }
+
+.success {
+	width: 100%;
+	border: 2px solid darkgreen;
+	background-color: green;
+	padding: 10px;
+	color: white;
+	font-size: 11pt;
+	text-align: center;
+}
+
 .form-control{
 	margin: 0;
 }
+
 form h1{
 	text-align: center;
 	margin-top: 0;
@@ -312,7 +324,7 @@ a:hover, a:active { text-decoration: none; }
         margin: 15px 0;
     }
     /* since 3.1.0 */
-    .navbar-collapse.collapse.in { 
+    .navbar-collapse.collapse.in {
         display: block!important;
     }
     .collapsing {
@@ -323,7 +335,7 @@ a:hover, a:active { text-decoration: none; }
 	.navbar-brand{
 		width: 80%;
 	}
-	
+
 	.navbar-toggle{
 		margin-top: 2.5vh;
 	}
@@ -342,7 +354,7 @@ a:hover, a:active { text-decoration: none; }
 		margin-top: 2vh;
 		margin-bottom: 5vh;
 	}
-	
+
 }
 @media only screen and (max-width: 320px){
 	#motto{
@@ -351,19 +363,19 @@ a:hover, a:active { text-decoration: none; }
 }
 
 @media only screen and (min-width: 900px) {
-  
+
 	.navbar-nav{
 		width: 50%
 	}
-	
-	
+
+
 }
 
 @media only screen and (max-width: 414px){
 	#motto{
 		font-size: 2em !important;
 	}
-	
+
 }
 @media only screen and (min-width: 992px) {
 	#motto{

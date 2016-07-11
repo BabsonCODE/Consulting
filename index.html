@@ -20,6 +20,7 @@
 	<!-- Angular resource files -->
 	<script src="https://code.angularjs.org/1.4.12/angular.min.js"></script>
 	<script src="https://code.angularjs.org/1.4.12/angular-route.min.js"></script>
+	<script src="https://code.angularjs.org/1.4.12/angular-resource.min.js"></script>
 
 	<!-- Angular code files -->
 	<script src="js/app.js"></script>
@@ -42,14 +43,10 @@
 
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class = "nav navbar-nav navbar-right">
-					<li><a href="#whatWeOffer">What We Offer</a></li>
-						<li><a href="#whatWeHaveDone">What We've Done</a></li>
-					<li><a href="#whatWeDo">What We Do</a></li>
-
-					<li><a href="#whoWeAre">Who We Are</a></li>
-
-
-
+					<li style="border-bottom-color: {{ color.whatWeOffer }}"><a href="#whatWeOffer">What We Offer</a></li>
+					<li style="border-bottom-color: {{ color.whatWeHaveDone }}"><a href="#whatWeHaveDone">What We've Done</a></li>
+					<li style="border-bottom-color: {{ color.whatWeDo }}"><a href="#whatWeDo">What We Do</a></li>
+					<li style="border-bottom-color: {{ color.whoWeAre }}"><a href="#whoWeAre">Who We Are</a></li>
 				</ul>
 			</div>
 		</div>
