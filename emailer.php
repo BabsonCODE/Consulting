@@ -1,6 +1,6 @@
 <?php
 ob_start();
-require_once 'swiftmailer/lib/swift_required.php';
+require_once 'swift/lib/swift_required.php';
 
 if (isset($_POST["name"])) {
     $name = $_POST["name"];
